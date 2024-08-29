@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDEA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/idea logo.png" type="image/png">
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+            <a href="index.html">
+                <img src="./images/idea logo.png" alt="" style="border-radius:15px; height:50px; padding-top: 5px;">
+            </a>
+          
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="index.html" class="nav_link">Home</a></li>
+            <li><a href="Climate Justice.html" class="nav_link">Climate Justice</a></li>
+            <li><a href="health.html" class="nav_link">Health</a></li>
+            <li><a href="Youth Livelihood.html" class="nav_link">Youth Livelihood</a></li>
+            <li><a href="Civic Accountability.html" class="nav_link">Civic Accountability</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>IDEA's Health Mission</h2>
+            <p>Our mission is to enhance healthcare access, promote hygiene, and educate communities on critical health issues. We work to ensure underserved populations receive essential medical services, support hygiene improvements through awareness campaigns and resource distribution, and provide educational programs on disease prevention, nutrition, and mental health. By addressing these key areas, we aim to reduce health disparities, improve overall well-being, and empower communities with the knowledge and resources needed for healthier lives.</p>
+            <div class="buttons">
+                <a class="btn" href="mailto:ideanebbi@gmail.com">Get In Touch</a>
+            </div>
+          </div>
+          <div class="column">
+            <img src="images/health-accountability.jpg" alt="civic-accountability" class="img" />
+          </div>
+        </div>
+    
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
